@@ -1,3 +1,38 @@
+/**
+ * -----------------------------------------------------------------------------
+ * Entity-Component-System (ECS) Implementation
+ * -----------------------------------------------------------------------------
+ *
+ * This header file contains an implementation of an Entity-Component-System (ECS)
+ * designed to be efficient, modular, and easy to use for game development and similar
+ * high-performance applications.
+ *
+ * The ECS is split into several namespaces and classes:
+ *
+ * ecs:: The main namespace that includes important constants.
+ *
+ * ecs::Entity:: A namespace that includes types and functions related to entities,
+ * including their creation, manipulation, and validation.
+ *
+ * ecs::Component:: A namespace that includes types and functions related to
+ * components, including their creation and identification.
+ *
+ * ecs::ComponentPool:: A class that manages a pool of components of a particular type.
+ * It allows adding and removing components for entities.
+ *
+ * ecs::Scene:: The main class that represents a scene in the ECS. A scene consists
+ * of a number of entities, each of which can have any number of components.
+ *
+ * ecs::SceneView:: A class that allows iterating over entities in a scene that
+ * have specific component types.
+ *
+ * This implementation focuses on performance and simplicity, allowing fast
+ * creation, deletion, and iteration over entities and components. It is designed
+ * to be used in real-time applications where performance is a priority.
+ *
+ * -----------------------------------------------------------------------------
+ */
+
 #pragma once
 
 #include <bitset>
