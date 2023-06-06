@@ -26,10 +26,6 @@
  * ecs::SceneView:: A class that allows iterating over entities in a scene that
  * have specific component types.
  *
- * This implementation focuses on performance and simplicity, allowing fast
- * creation, deletion, and iteration over entities and components. It is designed
- * to be used in real-time applications where performance is a priority.
- *
  * -----------------------------------------------------------------------------
  */
 
