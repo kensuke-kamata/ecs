@@ -26,11 +26,11 @@ A class that allows iterating over entities in a scene that have specific compon
 ```
 Overview Diagram
 
-| Entities (index) | Component 0   | Component 1   | Componen 2    |
+| Entities (index) |  Component 0  |  Component 1  |  Component 2  |
 |------------------|---------------|---------------|---------------|
-| Entity (0)       |      1        |      0        |     0         | <- bitset
-| Entity (1)       |      0        |      1        |     1         | <- bitset
-| Entity (2)       |      1        |      0        |     1         | <- bitset
+|    Entity (0)    |       1       |       0       |       0       | <- bitset
+|    Entity (1)    |       0       |       1       |       1       | <- bitset
+|    Entity (2)    |       1       |       0       |       1       | <- bitset
 |------------------|---------------|---------------|---------------|
 |                  |[ComponentPool]|[ComponentPool]|[ComponentPool]|
 
