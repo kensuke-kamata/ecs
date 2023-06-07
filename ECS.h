@@ -230,7 +230,7 @@ public:
             throw;
         }
         if (entities_[i].id_ != id) {
-            return;
+            throw;
         }
         entities_[i].mask_.reset(cid);
     }
@@ -246,7 +246,7 @@ public:
             throw;
         }
         if (entities_[i].id_ != id) {
-            return;
+            throw;
         }
         return static_cast<T *>(pools_[cid]->Get(i));
     }
