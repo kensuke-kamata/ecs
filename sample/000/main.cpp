@@ -18,6 +18,12 @@ void PhysicsSystem(ecs::Scene &scene, float dt) {
     }
 }
 
+void AllSystem(ecs::Scene &scene, float dt) {
+    for (auto id : ecs::SceneView<>(scene)) {
+        std::cout << "AllSystem ID: " << ecs::Entity::GetIndex(id) << std::endl;
+    }
+}
+
 int main(int, char**) {
     ecs::Scene scene;
     ecs::Entity::Id e1 = scene.NewEntity();
@@ -29,4 +35,5 @@ int main(int, char**) {
     scene.AddComponent<Rotation>(e3);
 
     PhysicsSystem(scene, 0.16f);
+    AllSystem(scene, 0.16f);
 }
