@@ -1,6 +1,9 @@
 /**
  * -----------------------------------------------------------------------------
+ *
  * Entity-Component-System (ECS) Implementation
+ * https://github.com/kensuke-kamata/ecs
+ *
  * -----------------------------------------------------------------------------
  *
  * This header file contains an implementation of an Entity-Component-System (ECS)
